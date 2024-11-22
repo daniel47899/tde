@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+body{
+    background-image: url(https://images6.alphacoders.com/411/thumb-1920-411829.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: #3f3e3e;
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FDC83C;
+}
+
+.header {
+    text-align: center;
+    font-style: normal;
+    padding-top: 20px;
+    font-weight: bold;
+    background-image: url(https://img.freepik.com/fotos-premium/textura-de-chapa-de-aco-velha-de-metal-enferrujado-de-fundo-rustico_84485-2053.jpg);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text;
+    background-attachment: multiply;
+}
+.header__title {
+    font-size: 55px;
+}
+
+.header__title::before {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+.header__subtitle {
+    padding-top: 20px;
+    font-size: 19px;
+    margin-bottom: 15px; 
+}
+.header__container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    border: 3px;
+    border-bottom-style: solid;
+    border-color: #FDC83C;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 15px;
+    list-style: none;
+    font-size: 30px;
+}
+.header__menu  :hover{ 
+    background-image: url(https://img.pikbest.com/wp/202408/worn-vintage-effect-dark-rusty-metal-texture-background_9965845.jpg!w700wp);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text;
+    transition: all 0.50s;
+}
+
+.header__menu li a {
+    text-decoration: none;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/01/04/27/background-1172581_1280.jpg);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text;
+
+}
+
+
+/* Intro Section */
+.section{
+    border-radius: 5px;
+    max-width: 1080px;
+    max-height: 1080px;
+    margin: auto; 
+}
+.section--intro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 60px;
+    background-size: 100%;
+    animation: Bganimation 10s linear infinite;
+}
+@keyframes Bganimation {
+    0% {
+        background-image: url(https://wallpapers.com/images/featured/mad-max-feo9nnp2k4jsh5ii.jpg);
+        background-repeat: no-repeat;
+    }
+    30%{
+        background-image: url(https://wallpapers.com/images/high/mad-max-desolate-wasteland-sunset-jo0hthlbnnna0jh6.webp);
+        background-repeat: no-repeat;
+    }
+    60%{
+        background-image: url(https://i.pinimg.com/736x/26/33/1f/26331f1929f1510e268c4636387664f1.jpg);
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url(https://wallpapers.com/images/high/mad-max-inspired-vehicle-display-b8w44wz0ogg5hhss.webp);
+        background-repeat: no-repeat;
+        
+    }
+
+}
+.section--intro p{
+    margin: 30px ;
+    padding-bottom: 200px;    
+}
+
+.intro__banner {
+    padding: 20px;
+}
+
+.intro__title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.intro__text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro__button{
+    text-decoration: none;
+    color: #FDC83C;
+    border: 1px;
+    border-style: solid;
+    border-color: #FDC83C;
+    padding: 15px 20px;
+    border-radius: 2px;
+    background-image: url(https://img.freepik.com/fotos-gratis/fundo-do-estilo-de-grunge-com-uma-textura-de-concreto_1048-4784.jpg);
+    transition: all 0.50s;      
+}
+
+.intro__button:hover {
+    background-image: url(https://img.pikbest.com/wp/202408/worn-vintage-effect-dark-rusty-metal-texture-background_9965845.jpg!w700wp);
+    color: #333;
+    border-color: #333;
+    color: #FDC83C;
+}
+
+/* Section about */
+
+.section {
+    border-radius: 10px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.section--about{
+    border-top-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+.section__title{
+    background-image: url(https://i.pinimg.com/736x/e1/2e/53/e12e530ed1f537a216011c8bbc4b0881.jpg);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text; 
+}
+
+.section__text {
+    border-radius: 5px;
+    border: 1px solid #919191;;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-image: url(https://i.pinimg.com/736x/e1/2e/53/e12e530ed1f537a216011c8bbc4b0881.jpg);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text; 
+}
+
+.about__grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.about__item {
+    text-align: center;
+    flex:1;
+    min-width: 150px;
+    padding: 20px;
+    background-image: url(https://img.pikbest.com/wp/202408/worn-vintage-effect-dark-rusty-metal-texture-background_9965845.jpg!w700wp);
+    background-size: 100%;
+    background-size: cover;
+    color:#ffae00;
+    font-weight: bold;
+    text-shadow: 
+        0 0 5px #ff8c00,
+        0 0 10px #ff4500,
+        0 0 15px #ff4500,
+        0 0 20px #ff4500,
+        0 0 25px #ff6347,
+        0 0 30px #ff6347,
+        0 0 35px #ffa07a;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+/* Gallery Section */
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery__item {
+    background-image: url(https://img.freepik.com/fotos-premium/fundo-de-metal-enferrujado_135595-75976.jpg);
+    background-size: cover;
+    overflow: auto;
+    text-align: center;
+    padding: 5px
+}
+
+.gallery__img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery__caption {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    background-image: url(https://st3.depositphotos.com/3441867/37679/i/450/depositphotos_376795206-stock-photo-dark-grungy-backdrop-plater-texture.jpg);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text;
+    
+}
+
+.btn-more {
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/01/04/27/background-1172581_1280.jpg);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text; 
+    font-family: "Anton SC", serif;
+    
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+     
+}
+
+.btn-more:hover {
+    background-color: #555;
+    color:#ffae00;
+    font-weight: bold;
+    text-shadow: 
+        0 0 5px #ff8c00,
+        0 0 10px #ff4500,
+        0 0 15px #ff4500,
+        0 0 20px #ff4500,
+        0 0 25px #ff6347,
+        0 0 30px #ff6347,
+        0 0 35px #ffa07a;
+    transition: color 0.3s ease-in-out;
+    transition: all 0.50s;
+}
+
+
+
+/* Services Section */
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service__item {
+    background-image:url(https://img.pikbest.com/wp/202408/worn-vintage-effect-dark-rusty-metal-texture-background_9965845.jpg!w700wp) ;
+    font-weight: bold;
+    text-shadow: 
+        0 0 5px #ff8c00,
+        0 0 10px #ff4500,
+        0 0 15px #ff4500,
+        0 0 20px #ff4500,
+        0 0 25px #ff6347,
+        0 0 30px #ff6347,
+        0 0 35px #ffa07a;
+    transition: color 0.3s ease-in-out;
+    transition: all 0.50s;
+    padding: 20px;
+    border: 1px solid #6d6d6d;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* News Section */
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news__item {
+    display: flex;
+    flex-direction: column;
+    border: 2px;
+    border-radius: 5px;
+    background-image: url(https://img.freepik.com/fotos-premium/fundo-de-metal-enferrujado_135595-75976.jpg);
+}
+
+.news__img {
+    width: 100%;
+    height: auto;
+}
+
+.news__content {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://st3.depositphotos.com/3441867/37679/i/450/depositphotos_376795206-stock-photo-dark-grungy-backdrop-plater-texture.jpg);
+    background-size: cover; 
+    color: transparent; 
+    background-clip: text;
+}
+
+.news__title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.news__date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news__summary {
+    margin-bottom: 10px;
+}
+
+
+/* Contact Section */
+.contact__form {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    
+    margin-bottom: 5px;
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form__button {
+    padding: 10px;
+    background-color:#ebb113 ;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.55s;
+    
+}
+
+.form__button:hover {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210702/pngtree-black-yellow-grunge-texture-vector-dirty-background-image_736208.jpg);
+    color: white;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210702/pngtree-black-yellow-grunge-texture-vector-dirty-background-image_736208.jpg);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer__text {
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social__link {
+    color: #fff;
+    
+}
+
+.social__link:hover {
+    color: #ddd;
+}
+
+.social__link:hover {
+    color: #ddd;
+}
+
+
+
+@media (max-width: 768px) {
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .intro__banner {
+        padding: 20px 10px;
+    }
+
+    
+    .footer{
+        margin-top: 200px;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+    
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .intro__banner {
+        padding: 20px 10px;
+    }
+    #contact{
+        margin-top: 1000px;
+    }
+    
+    .footer{
+        margin-top: 400px;
+    }
+}
+
+@media (max-width: 560px) {
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .intro__banner {
+        padding: 20px 10px;
+    }
+
+    
+    #contact{
+        margin-top: 1000px;
+    }
+   
+    
+    #services{
+        margin-top: 700px;
+
+    }
+
+    .footer{
+        margin-top: 500px;
+    }
+}
+
+
+
+
+@media (max-width: 470px) {
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .intro__banner {
+        padding: 20px 10px;
+    }
+
+    
+    #contact{
+        margin-top: 1000px;
+    
+    }
+    .footer{
+        margin-top: 500px;
+    }
+    
+
+    #services{
+        margin-top: 700px;
+
+    }
+}
